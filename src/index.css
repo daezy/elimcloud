@@ -1,12 +1,45 @@
-* {
-  box-sizing: border-box;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "DM Serif Display", Georgia, serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #0b0510;
-  color: #fff;
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  overflow-x: hidden;
+@layer base {
+  html {
+    /* Fluid typography base: min 15px, max 18px based on viewport width */
+    font-size: clamp(15px, 0.39vw + 13.75px, 18px);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0f172a;
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: #f72a6b;
+    color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    letter-spacing: 0.01em;
+  }
 }
