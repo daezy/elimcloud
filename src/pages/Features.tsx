@@ -1,4 +1,9 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
@@ -44,38 +49,121 @@ const features = [
 ];
 
 export default function Features() {
+  const pageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        "#features-header",
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out", delay: 0.2 },
+      );
+      gsap.fromTo(
+        "#features-intro",
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.7,
+          ease: "power3.out",
+          scrollTrigger: { trigger: "#features-intro", start: "top 88%" },
+        },
+      );
+      gsap.fromTo(
+        "#features-grid > *",
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.65,
+          ease: "power3.out",
+          stagger: 0.07,
+          scrollTrigger: { trigger: "#features-grid", start: "top 85%" },
+        },
+      );
+      gsap.fromTo(
+        "#features-cta > *",
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.7,
+          ease: "power3.out",
+          stagger: 0.12,
+          scrollTrigger: { trigger: "#features-cta", start: "top 88%" },
+        },
+      );
+    }, pageRef);
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <>
-      {/* ===== PAGE HEADER ===== */}
-      <section className="bg-[#0e0818] pb-16 pt-32">
-        <div className="mx-auto w-full max-w-7xl px-8 lg:px-16">
-          <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-[#f72a6b]">
+    <div ref={pageRef}>
+      {/* ── PAGE HEADER ─────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden bg-[#0d1126] pb-20 pt-32">
+        <img
+          src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-center opacity-25"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-linear-to-r from-[#0d1126]/96 via-[#0d1126]/78 to-[#0d1126]/55" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_50%_at_0%_60%,rgba(74,52,160,0.2),transparent_70%)]" />
+        <div
+          id="features-header"
+          className="relative mx-auto w-full max-w-7xl px-8 lg:px-16"
+        >
+          <span className="mb-4 inline-block rounded-full bg-[#fff0f4]/12 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[#ff8fab]">
             Platform Capabilities
           </span>
-          <h1 className="mb-4 font-display text-4xl font-extrabold md:text-5xl">
-            Features &amp; Modules
+          <h1 className="font-serif text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-[56px]">
+            Powerful Modules,
+            <br />
+            <span className="bg-linear-to-r from-[#9d8bf0] via-[#7c6bd4] to-[#4a34a0] bg-clip-text text-transparent">
+              One Platform.
+            </span>
           </h1>
-          <p className="max-w-2xl text-lg text-white/60">
-            Our ERP and accounting platforms come packed with powerful modules
-            designed to handle every aspect of your business operations.
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/55">
+            Our ERP and accounting platforms come packed with integrated modules
+            designed to handle every aspect of your business operations from a
+            single cloud dashboard.
           </p>
         </div>
       </section>
 
-      {/* ===== FEATURES GRID ===== */}
-      <section className="bg-[#0b0510] py-20">
+      {/* ── FEATURES GRID — light gray ────────────────────────────────────────── */}
+      <section className="border-b border-gray-200 bg-[#f4f7fb] py-20">
         <div className="mx-auto w-full max-w-7xl px-8 lg:px-16">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div id="features-intro" className="mb-12">
+            <span className="mb-3 inline-block rounded-full bg-[#fff0f4] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[#f72a6b]">
+              Features &amp; Modules
+            </span>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-[#0f172a] md:text-4xl">
+              Everything you need to run your business.
+            </h2>
+            <p className="mt-4 max-w-2xl leading-relaxed text-[#475569]">
+              10+ fully integrated modules covering accounting, ERP, HR,
+              logistics, and more — all connected in one cloud platform built
+              for Nigerian businesses.
+            </p>
+          </div>
+          <div
+            id="features-grid"
+            className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          >
             {features.map((f, i) => (
               <div
                 key={f.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-8 transition-colors hover:border-[#f72a6b]/40"
+                className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#f72a6b]/20 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
               >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f72a6b]/20 font-bold text-[#f72a6b]">
+                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#fff0f4] font-display text-sm font-extrabold text-[#f72a6b] transition-colors group-hover:bg-[#f72a6b] group-hover:text-white">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="mb-3 text-xl font-bold">{f.title}</h3>
-                <p className="text-sm leading-relaxed text-white/60">
+                <h3 className="mb-2 font-display text-base font-bold text-[#0f172a]">
+                  {f.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-[#475569]">
                   {f.desc}
                 </p>
               </div>
@@ -84,24 +172,47 @@ export default function Features() {
         </div>
       </section>
 
-      {/* ===== CTA ===== */}
-      <section className="bg-linear-to-r from-[#c51162] to-[#4a34a0] py-16">
-        <div className="mx-auto w-full max-w-3xl px-8 text-center">
-          <h2 className="mb-4 font-display text-3xl font-bold">
-            See It In Action
+      {/* ── CTA ───────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden bg-[#1a3a5f] py-24">
+        <div className="pointer-events-none absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=60"
+            alt=""
+            aria-hidden="true"
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-[#0d1f35]/70" />
+        </div>
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_50%_50%,rgba(247,42,107,0.12),transparent_70%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.04)_1px,transparent_1px)] bg-size-[24px_24px]" />
+        <div
+          id="features-cta"
+          className="relative mx-auto w-full max-w-3xl px-8 text-center"
+        >
+          <h2 className="font-display text-3xl font-extrabold tracking-tight text-white md:text-5xl">
+            See it in action.
           </h2>
-          <p className="mb-8 text-white/80">
+          <p className="mx-auto mt-5 max-w-xl text-lg font-light text-white/65">
             Request a demo and experience how Elim solutions can streamline your
-            business operations.
+            business operations end-to-end.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block rounded-full bg-white px-10 py-4 text-sm font-bold text-[#0b0510] no-underline transition-transform hover:-translate-y-0.5 hover:shadow-lg"
-          >
-            Request A Demo
-          </Link>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-full bg-[#f72a6b] px-10 py-4 text-sm font-bold text-white transition-all hover:scale-105 hover:bg-[#e01e5a] hover:shadow-[0_0_30px_-5px_rgba(247,42,107,0.5)]"
+            >
+              Request a Demo
+            </Link>
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/8 px-10 py-4 text-sm font-bold text-white transition hover:bg-white/14"
+            >
+              View Solutions
+            </Link>
+          </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

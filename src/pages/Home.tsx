@@ -546,6 +546,32 @@ export default function Home() {
           },
         });
       }
+
+      // ── Section image parallax (all [data-parallax] elements) ────────
+      (gsap.utils.toArray("[data-parallax]") as HTMLElement[]).forEach((el) => {
+        // Bento wrapper divs are position:absolute inset-0 — use a lighter
+        // scale and yPercent so they don't escape their tile boundary.
+        const isBentoWrapper = el.tagName === "DIV";
+        const scaleAmt = isBentoWrapper ? 1.22 : 1.45;
+        const fromPct = isBentoWrapper ? -14 : -25;
+        const toPct = isBentoWrapper ? 14 : 25;
+
+        gsap.set(el, { scale: scaleAmt, transformOrigin: "50% 50%" });
+        gsap.fromTo(
+          el,
+          { yPercent: fromPct },
+          {
+            yPercent: toPct,
+            ease: "none",
+            scrollTrigger: {
+              trigger: el.closest("section") ?? el.parentElement ?? el,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: 1.5,
+            },
+          },
+        );
+      });
     }, pageRef);
     return () => ctx.revert();
   }, []);
@@ -950,6 +976,7 @@ export default function Home() {
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
                 alt="Elim team collaborating"
+                data-parallax
                 className="h-full min-h-96 w-full object-cover"
                 loading="lazy"
               />
@@ -989,6 +1016,7 @@ export default function Home() {
           <img
             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
             alt="Financial analysis and accounting"
+            data-parallax
             className="h-80 w-full object-cover object-center"
             loading="lazy"
           />
@@ -1104,6 +1132,7 @@ export default function Home() {
               <img
                 src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=700&q=80"
                 alt="ERP dashboard and logistics"
+                data-parallax
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
@@ -1176,13 +1205,15 @@ export default function Home() {
           >
             {/* Tile 1 — Cloud Hero (1 col × 2 rows on desktop) */}
             <div className="group relative flex min-h-96 flex-col justify-between overflow-hidden rounded-3xl p-8 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_28px_60px_rgba(0,0,0,0.30)] lg:min-h-0 lg:row-span-2">
-              <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                loading="lazy"
-              />
+              <div data-parallax className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
               <div className="absolute inset-0 bg-linear-to-b from-[#0d1126]/60 via-[#0d1126]/72 to-[#0d1126]/90" />
               <div className="pointer-events-none absolute -right-12 -top-12 h-52 w-52 rounded-full bg-[radial-gradient(circle,rgba(247,42,107,0.28),transparent_65%)] blur-2xl" />
               <div className="relative">
@@ -1234,13 +1265,15 @@ export default function Home() {
 
             {/* Tile 2 — 15+ Years expertise */}
             <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.24)]">
-              <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=700&q=80"
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                loading="lazy"
-              />
+              <div data-parallax className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=700&q=80"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
               <div className="absolute inset-0 bg-[#0f172a]/80" />
               <svg
                 className="relative h-7 w-7 text-[#f72a6b] transition-transform duration-300 group-hover:scale-110"
@@ -1267,13 +1300,15 @@ export default function Home() {
 
             {/* Tile 3 — 500+ Businesses */}
             <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(247,42,107,0.30)]">
-              <img
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80"
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                loading="lazy"
-              />
+              <div data-parallax className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
               <div className="absolute inset-0 bg-[#c01040]/80" />
               <svg
                 className="relative h-7 w-7 text-white/80 transition-transform duration-300 group-hover:scale-110"
@@ -1300,13 +1335,15 @@ export default function Home() {
 
             {/* Tile 4 — Multi-Branch Management (2 cols wide) */}
             <div className="group relative flex flex-col justify-between gap-5 overflow-hidden rounded-3xl p-8 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(74,52,160,0.30)] sm:col-span-2 lg:col-span-2">
-              <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                loading="lazy"
-              />
+              <div data-parallax className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
               <div className="absolute inset-0 bg-linear-to-r from-[#4a34a0]/92 via-[#4a34a0]/78 to-[#0d1126]/70" />
               <div className="relative flex items-start gap-4">
                 <div className="shrink-0 rounded-2xl bg-white/15 p-3 ring-1 ring-white/20">
@@ -1353,13 +1390,15 @@ export default function Home() {
 
             {/* Tile 5 — 8 Industry Verticals (2 cols wide) */}
             <div className="group relative flex flex-col gap-4 overflow-hidden rounded-3xl p-8 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] sm:col-span-2 lg:col-span-2">
-              <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                loading="lazy"
-              />
+              <div data-parallax className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
               <div className="absolute inset-0 bg-linear-to-r from-[#0d1126]/90 via-[#0d1126]/78 to-[#0d1126]/60" />
               <div className="relative">
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#9d8bf0]">
@@ -1392,13 +1431,15 @@ export default function Home() {
 
             {/* Tile 6 — 10+ Modules */}
             <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(157,139,240,0.30)]">
-              <img
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=700&q=80"
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                loading="lazy"
-              />
+              <div data-parallax className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=700&q=80"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
               <div className="absolute inset-0 bg-[#0d1126]/85" />
               <svg
                 className="relative h-7 w-7 text-[#9d8bf0] transition-transform duration-300 group-hover:scale-110"
@@ -1439,6 +1480,7 @@ export default function Home() {
           <img
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80"
             alt="Team using ERP software"
+            data-parallax
             className="h-72 w-full object-cover object-top"
             loading="lazy"
           />
@@ -1523,6 +1565,7 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=60"
             alt=""
             aria-hidden="true"
+            data-parallax
             className="h-full w-full object-cover"
             loading="lazy"
           />

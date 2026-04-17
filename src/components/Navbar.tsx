@@ -5,25 +5,70 @@ import { gsap } from "gsap";
 type DropdownItem = { label: string; to: string };
 
 const accountingItems: DropdownItem[] = [
-  { label: "Cloud Accounting for Retail Business", to: "/services" },
-  { label: "Cloud Accounting for Manufacturing", to: "/services" },
-  { label: "Cloud Accounting for Professional Business", to: "/services" },
-  { label: "Cloud Accounting for Real Estate", to: "/services" },
-  { label: "Cloud Accounting for Contract Services", to: "/services" },
-  { label: "Cloud Accounting for Engineering Services", to: "/services" },
-  { label: "Cloud Accounting for Trading & Distribution", to: "/services" },
-  { label: "Cloud Accounting for Construction Industry", to: "/services" },
+  {
+    label: "Cloud Accounting for Retail Business",
+    to: "/services/accounting/retail",
+  },
+  {
+    label: "Cloud Accounting for Manufacturing",
+    to: "/services/accounting/manufacturing",
+  },
+  {
+    label: "Cloud Accounting for Professional Business",
+    to: "/services/accounting/professional",
+  },
+  {
+    label: "Cloud Accounting for Real Estate",
+    to: "/services/accounting/real-estate",
+  },
+  {
+    label: "Cloud Accounting for Contract Services",
+    to: "/services/accounting/contract",
+  },
+  {
+    label: "Cloud Accounting for Engineering Services",
+    to: "/services/accounting/engineering",
+  },
+  {
+    label: "Cloud Accounting for Trading & Distribution",
+    to: "/services/accounting/distribution",
+  },
+  {
+    label: "Cloud Accounting for Construction Industry",
+    to: "/services/accounting/construction",
+  },
 ];
 
 const erpItems: DropdownItem[] = [
-  { label: "Cloud ERP for Real Estate Companies", to: "/services" },
-  { label: "Cloud ERP for Gen. Business Services", to: "/services" },
-  { label: "Cloud ERP for Professional Services", to: "/services" },
-  { label: "Cloud ERP for Contract Services", to: "/services" },
-  { label: "Cloud ERP for Engineering Services", to: "/services" },
-  { label: "Cloud ERP for Trading & Distribution", to: "/services" },
-  { label: "Cloud ERP for Construction Industry", to: "/services" },
-  { label: "Cloud ERP for Production Companies", to: "/services" },
+  {
+    label: "Cloud ERP for Real Estate Companies",
+    to: "/services/erp/real-estate",
+  },
+  {
+    label: "Cloud ERP for Gen. Business Services",
+    to: "/services/erp/general",
+  },
+  {
+    label: "Cloud ERP for Professional Services",
+    to: "/services/erp/professional",
+  },
+  { label: "Cloud ERP for Contract Services", to: "/services/erp/contract" },
+  {
+    label: "Cloud ERP for Engineering Services",
+    to: "/services/erp/engineering",
+  },
+  {
+    label: "Cloud ERP for Trading & Distribution",
+    to: "/services/erp/distribution",
+  },
+  {
+    label: "Cloud ERP for Construction Industry",
+    to: "/services/erp/construction",
+  },
+  {
+    label: "Cloud ERP for Production Companies",
+    to: "/services/erp/production",
+  },
 ];
 
 function NavDropdown({
