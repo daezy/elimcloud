@@ -283,22 +283,7 @@ export default function Navbar() {
                 Features
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/partnership"
-                className={({ isActive }) =>
-                  `cursor-pointer text-[15px] font-medium no-underline transition-colors ${
-                    isActive
-                      ? "font-semibold text-[#f72a6b]"
-                      : scrolled
-                        ? "text-white/90 hover:text-[#f72a6b]"
-                        : "text-white/90 hover:text-white"
-                  }`
-                }
-              >
-                Partnership
-              </NavLink>
-            </li>
+            // Partnership tab removed
             <li>
               <NavLink
                 to="/contact"
