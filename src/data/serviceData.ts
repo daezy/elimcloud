@@ -81,6 +81,209 @@ const logisticsModule: ServiceModule = {
 };
 
 export const services: ServiceItem[] = [
+  // ── Custom ERP Solutions (from user request) ──
+  {
+    slug: "ehps",
+    type: "erp",
+    label: "EHPS",
+    title: "Elim HRIS & Payroll Software",
+    tagline:
+      "Streamline HR, payroll, and compliance for outsourcing companies.",
+    intro:
+      "Elim HRIS and Payroll Software is a customized solution for personnel information management, payroll, and statutory compliance. Designed for companies that outsource employees, it features modules for HR, payroll, leave, medical records, cooperative management, billing, and risk control. Highly configurable for multiple locations and salary structures.",
+    photo: "http://www.eiomsng.com/img/11.jpg",
+    accentColor: "purple",
+    modules: [
+      {
+        title: "Human Resources",
+        desc: "Recruitment, employee records, leave, loans, and advances management.",
+      },
+      {
+        title: "Compensation Management",
+        desc: "Integrated payroll and HR data, monthly earnings, deductions, and statutory compliance.",
+      },
+      {
+        title: "Medical & Cooperative Management",
+        desc: "Track staff medical records and manage cooperative society deductions.",
+      },
+      {
+        title: "Client Billing",
+        desc: "Automated client invoicing, receivables, and agency fee management.",
+      },
+      {
+        title: "Risk & Control",
+        desc: "Process monitoring, access restrictions, and compliance management.",
+      },
+    ],
+    benefits: [
+      "Automated payroll and payslip generation",
+      "Multi-location and multi-client support",
+      "Customizable leave and loan policies",
+      "Integrated billing and receivables",
+      "Comprehensive compliance and reporting",
+    ],
+  },
+  {
+    slug: "ehps-oce",
+    type: "erp",
+    label: "EHPS-OCE",
+    title: "Elim HRIS & Payroll Software (OCE)",
+    tagline: "HRIS & Payroll for Employee Outsourcing Companies.",
+    intro:
+      "A flexible HRIS and Payroll solution for recruitment and outsourcing companies. Features include applicant portal, recruitment, employee management, leave, compliance, self-service, loans, payroll, billing, and risk management. Developed for organizations with complex outsourcing needs.",
+    photo: "http://www.eiomsng.com/img/11.jpg",
+    accentColor: "purple",
+    modules: [
+      {
+        title: "Applicant Portal & Recruitment",
+        desc: "Web-based job search, application, and recruitment management.",
+      },
+      {
+        title: "Employee Information & Leave",
+        desc: "Comprehensive employee records and flexible leave management.",
+      },
+      {
+        title: "Statutory Compliance",
+        desc: "Automated tax, pension, NHF, NHIS, and payroll compliance.",
+      },
+      {
+        title: "Self-Service & Loans",
+        desc: "Employee self-service for payslips, leave, loans, and advances.",
+      },
+      {
+        title: "Payroll & Billing",
+        desc: "Dynamic payroll, client billing, and receivables management.",
+      },
+    ],
+    benefits: [
+      "End-to-end outsourcing HR and payroll",
+      "Integrated applicant and employee management",
+      "Automated compliance and tax reporting",
+      "Self-service for employees",
+      "Client billing and receivables",
+    ],
+  },
+  {
+    slug: "pos",
+    type: "erp",
+    label: "POS",
+    title: "Elim POS Software",
+    tagline: "Integrated Online & Offline Hybrid POS & Accounting System.",
+    intro:
+      "Elim POS Software is a customizable, integrated POS and accounting system for multi-branch retail businesses. Supports online/offline operation, centralized management, inventory, purchasing, sales, and financial accounting. Scalable for single or multiple locations.",
+    photo: "https://www.ace.vewatshippingltd.com/images/pos.jpg",
+    accentColor: "purple",
+    modules: [
+      {
+        title: "Multi-Branch Management",
+        desc: "Centralized management for all branches and locations.",
+      },
+      {
+        title: "Inventory & Warehousing",
+        desc: "Unlimited inventory, stock transfers, and real-time tracking.",
+      },
+      {
+        title: "Point of Sales",
+        desc: "Sales, invoicing, receipts, and customer management.",
+      },
+      {
+        title: "Financial Accounting",
+        desc: "Integrated accounting, cash, bank, and financial reports.",
+      },
+      {
+        title: "User & Module Management",
+        desc: "Unlimited users, permissions, and audit trails.",
+      },
+    ],
+    benefits: [
+      "Online and offline hybrid operation",
+      "Centralized inventory and sales management",
+      "Integrated accounting and reporting",
+      "Unlimited users and locations",
+      "Customizable to business needs",
+    ],
+  },
+  {
+    slug: "hms",
+    type: "erp",
+    label: "HMS",
+    title: "Elim Hotel Management System (HMS)",
+    tagline: "Comprehensive hotel management and ERP solution.",
+    intro:
+      "Elim HMS is a complete hotel management system covering reservations, guest management, billing, housekeeping, inventory, and financials. Designed for hotels, groups, and chains seeking integrated operations and real-time reporting.",
+    photo: "https://www.ace.vewatshippingltd.com/images/hms.jpg",
+    accentColor: "purple",
+    modules: [
+      {
+        title: "Reservations & Front Desk",
+        desc: "Room booking, check-in/out, and guest management.",
+      },
+      {
+        title: "Housekeeping & Maintenance",
+        desc: "Task scheduling, room status, and maintenance tracking.",
+      },
+      {
+        title: "Inventory & Procurement",
+        desc: "Manage hotel inventory, suppliers, and procurement.",
+      },
+      {
+        title: "Billing & Financials",
+        desc: "Automated billing, invoicing, and financial reporting.",
+      },
+      {
+        title: "Group/Chain Management",
+        desc: "Multi-property management and consolidated reporting.",
+      },
+    ],
+    benefits: [
+      "End-to-end hotel operations management",
+      "Integrated billing and financials",
+      "Real-time inventory and procurement",
+      "Multi-property/group support",
+      "Comprehensive guest experience management",
+    ],
+  },
+  {
+    slug: "hospitalerp",
+    type: "erp",
+    label: "Hospital ERP",
+    title: "Elim Hospital ERP",
+    tagline:
+      "Comprehensive enterprise hospital management and accounting ERP software.",
+    intro:
+      "Elim Hospital ERP is a customizable hospital management and accounting solution for hospitals of all sizes. Integrates outpatient/inpatient management, pharmacy, billing, HR/payroll, inventory, and financials. Supports multi-branch, online/offline, and cloud deployment.",
+    photo: "https://www.ace.vewatshippingltd.com/images/hospitalerp.jpg",
+    accentColor: "purple",
+    modules: [
+      {
+        title: "Patient & Clinical Management",
+        desc: "Outpatient/inpatient, pharmacy, and medical records.",
+      },
+      {
+        title: "Billing & Insurance",
+        desc: "Automated billing, insurance, and HMO management.",
+      },
+      {
+        title: "HR & Payroll",
+        desc: "Staff management, payroll, and statutory compliance.",
+      },
+      {
+        title: "Inventory & Procurement",
+        desc: "Medical and general inventory, procurement, and suppliers.",
+      },
+      {
+        title: "Multi-Branch & Cloud",
+        desc: "Centralized management for multiple hospitals/branches.",
+      },
+    ],
+    benefits: [
+      "Integrated hospital operations and accounting",
+      "Automated billing and insurance",
+      "HR, payroll, and compliance",
+      "Multi-branch and cloud support",
+      "Customizable for any hospital size",
+    ],
+  },
   // ── ECPAS ──────────────────────────────────────────────────────────────────
   {
     slug: "retail",

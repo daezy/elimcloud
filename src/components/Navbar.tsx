@@ -71,6 +71,17 @@ const erpItems: DropdownItem[] = [
   },
 ];
 
+const productItems: DropdownItem[] = [
+  { label: "Elim HRIS & Payroll Software", to: "/services/erp/ehps" },
+  {
+    label: "Elim HRIS & Payroll (Outsourcing Edition)",
+    to: "/services/erp/ehps-oce",
+  },
+  { label: "Elim POS Software", to: "/services/erp/pos" },
+  { label: "Elim Hotel Management System", to: "/services/erp/hms" },
+  { label: "Elim Hospital ERP", to: "/services/erp/hospitalerp" },
+];
+
 function NavDropdown({
   label,
   items,
@@ -267,6 +278,11 @@ export default function Navbar() {
               scrolled={scrolled}
             />
             <NavDropdown label="ERP" items={erpItems} scrolled={scrolled} />
+            <NavDropdown
+              label="Products"
+              items={productItems}
+              scrolled={scrolled}
+            />
             <li>
               <NavLink
                 to="/features"
@@ -283,7 +299,6 @@ export default function Navbar() {
                 Features
               </NavLink>
             </li>
-            // Partnership tab removed
             <li>
               <NavLink
                 to="/contact"

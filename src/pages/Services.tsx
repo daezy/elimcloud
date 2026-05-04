@@ -103,53 +103,20 @@ export default function Services() {
       </section>
 
       {/* ── ECPAS — light gray ────────────────────────────────────────────── */}
-      <section className="border-b border-gray-200 bg-[#f4f7fb] pb-20">
-        {/* Full-width photo banner */}
-        <div className="relative mb-16 overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
-            alt="Financial analysis and accounting"
-            className="h-80 w-full object-cover object-center"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-linear-to-r from-[#0f172a]/85 via-[#0f172a]/55 to-transparent" />
-          <div className="absolute inset-0 flex items-center">
-            <div className="mx-auto w-full max-w-7xl px-8 lg:px-16">
-              <span className="mb-3 inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-[#ff8fab]">
-                Elim Cloud Premium Accounting Software
-              </span>
-              <h2 className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
-                ECPAS — Industry-Specific
-                <br />
-                Accounting
-              </h2>
-              <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/65 md:text-base">
-                Purpose-built for eight major verticals — the financial platform
-                that truly understands your industry's workflow.
-              </p>
-              <Link
-                to="/contact"
-                className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#ff8fab] transition-colors hover:text-white"
-              >
-                Explore accounting solutions
-                <svg
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
+      <section className="border-b border-gray-200 bg-[#f4f7fb] py-16">
         <div className="mx-auto w-full max-w-7xl px-8 lg:px-16">
+          <div className="mb-10 flex flex-col gap-1 border-l-4 border-[#f72a6b] pl-5">
+            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#f72a6b]">
+              Cloud Accounting Solutions — ECPAS
+            </span>
+            <h2 className="font-display text-xl font-bold text-[#0f172a] md:text-2xl">
+              Industry-Specific Accounting Software
+            </h2>
+            <p className="mt-1 max-w-xl text-sm text-[#475569]">
+              Purpose-built for eight major verticals — the financial platform
+              that truly understands your industry's workflow.
+            </p>
+          </div>
           <div
             id="svc-ecpas-cards"
             className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4"
@@ -196,54 +163,21 @@ export default function Services() {
       {/* ── ECPBES — dark ────────────────────────────────────────────────── */}
       <section className="bg-[#0d0b1e] py-20">
         <div className="mx-auto w-full max-w-7xl px-8 lg:px-16">
-          {/* Header: text left, tall photo right */}
           <div
             id="svc-ecpbes-header"
-            className="mb-12 grid items-stretch gap-0 overflow-hidden rounded-3xl lg:grid-cols-[1fr_420px]"
+            className="mb-10 flex flex-col gap-1 border-l-4 border-[#9d8bf0] pl-5"
           >
-            <div className="flex flex-col justify-center rounded-l-3xl border border-r-0 border-white/8 bg-white/4 p-8 lg:p-12">
-              <span className="mb-3 inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-[#9d8bf0]">
-                Elim Cloud Premium Business ERP Software
-              </span>
-              <h2 className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl">
-                ECPBES — Enterprise ERP
-                <br />
-                Solutions
-              </h2>
-              <p className="mt-4 text-base text-white/55">
-                Full-scale ERP spanning real estate, professional services,
-                construction, distribution, and production — built for
-                businesses that need more than accounting.
-              </p>
-              <Link
-                to="/contact"
-                className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-[#9d8bf0] transition-colors hover:text-[#c2b3ff]"
-              >
-                Explore ERP solutions
-                <svg
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </Link>
-            </div>
-            <div className="relative hidden overflow-hidden rounded-r-3xl border border-l-0 border-white/8 lg:block">
-              <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=700&q=80"
-                alt="ERP dashboard and logistics"
-                className="h-full w-full object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-linear-to-l from-transparent via-[#0d0b1e]/20 to-[#0d0b1e]/60" />
-            </div>
+            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#9d8bf0]">
+              Enterprise ERP Solutions — ECPBES
+            </span>
+            <h2 className="font-display text-xl font-bold text-white md:text-2xl">
+              Full-Scale ERP for Every Industry
+            </h2>
+            <p className="mt-1 max-w-xl text-sm text-white/55">
+              Full-scale ERP spanning real estate, professional services,
+              construction, distribution, and production — built for businesses
+              that need more than accounting.
+            </p>
           </div>
 
           <div
