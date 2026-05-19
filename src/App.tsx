@@ -6,6 +6,7 @@ import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import Features from "./pages/Features";
 import Contact from "./pages/Contact";
+import Partnership from "./pages/Partnership";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="services/:type/:slug" element={<ServiceDetail />} />
         <Route path="features" element={<Features />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="partnership" element={<Partnership />} />
       </Route>
     </Routes>
   );
