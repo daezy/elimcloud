@@ -51,7 +51,7 @@ export default function Contact() {
       {/* ── PAGE HEADER ─────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-[#0d1126] pb-20 pt-32">
         <img
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80"
+          src="/images/analytics-header.png"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-25"

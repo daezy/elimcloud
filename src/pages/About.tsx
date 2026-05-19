@@ -128,7 +128,7 @@ export default function About() {
       {/* ── PAGE HEADER ─────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-[#0d1126] pb-20 pt-32">
         <img
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80"
+          src="/images/team-collab.png"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-30"
@@ -334,7 +334,7 @@ export default function About() {
       <section className="relative overflow-hidden bg-[#1a3a5f] py-24">
         <div className="pointer-events-none absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=60"
+            src="/images/office-building.png"
             alt=""
             aria-hidden="true"
             className="h-full w-full object-cover"

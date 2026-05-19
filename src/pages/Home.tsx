@@ -766,7 +766,7 @@ export default function Home() {
               {/* Frameless photo — clip-path wipe reveal via GSAP */}
               <div ref={heroPhotoRef} className="relative overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=90"
+                  src="/images/hero-photo.png"
                   alt="Business team working with ERP software"
                   className="h-170 w-full object-cover object-center"
                   loading="eager"
@@ -974,7 +974,7 @@ export default function Home() {
               className="relative hidden overflow-hidden rounded-3xl shadow-[0_24px_60px_rgba(0,0,0,0.12)] lg:block"
             >
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                src="/images/team-collab.png"
                 alt="Elim team collaborating"
                 data-parallax
                 className="h-full min-h-96 w-full object-cover"
@@ -1014,7 +1014,7 @@ export default function Home() {
         {/* Full-width photo intro banner */}
         <div className="relative mb-16 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+            src="/images/accounting-banner.png"
             alt="Financial analysis and accounting"
             data-parallax
             className="h-80 w-full object-cover object-center"
@@ -1130,7 +1130,7 @@ export default function Home() {
             {/* Right: tall photo */}
             <div className="relative hidden overflow-hidden rounded-r-3xl border border-white/8 border-l-0 lg:block">
               <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=700&q=80"
+                src="/images/erp-software.png"
                 alt="ERP dashboard and logistics"
                 data-parallax
                 className="h-full w-full object-cover"
@@ -1207,7 +1207,7 @@ export default function Home() {
             <div className="group relative flex min-h-96 flex-col justify-between overflow-hidden rounded-3xl p-8 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_28px_60px_rgba(0,0,0,0.30)] lg:min-h-0 lg:row-span-2">
               <div data-parallax className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                  src="/images/analytics-header.png"
                   alt=""
                   aria-hidden="true"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -1267,7 +1267,7 @@ export default function Home() {
             <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.24)]">
               <div data-parallax className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=700&q=80"
+                  src="/images/team-collab.png"
                   alt=""
                   aria-hidden="true"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -1302,7 +1302,7 @@ export default function Home() {
             <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(247,42,107,0.30)]">
               <div data-parallax className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80"
+                  src="/images/office-building.png"
                   alt=""
                   aria-hidden="true"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -1337,7 +1337,7 @@ export default function Home() {
             <div className="group relative flex flex-col justify-between gap-5 overflow-hidden rounded-3xl p-8 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(74,52,160,0.30)] sm:col-span-2 lg:col-span-2">
               <div data-parallax className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                  src="/images/office-building.png"
                   alt=""
                   aria-hidden="true"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -1392,7 +1392,7 @@ export default function Home() {
             <div className="group relative flex flex-col gap-4 overflow-hidden rounded-3xl p-8 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] sm:col-span-2 lg:col-span-2">
               <div data-parallax className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+                  src="/images/erp-software.png"
                   alt=""
                   aria-hidden="true"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -1433,7 +1433,7 @@ export default function Home() {
             <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(157,139,240,0.30)]">
               <div data-parallax className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=700&q=80"
+                  src="/images/hero-photo.png"
                   alt=""
                   aria-hidden="true"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -1478,7 +1478,7 @@ export default function Home() {
         {/* Photo banner — part of the pinned section */}
         <div className="relative overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80"
+            src="/images/erp-software.png"
             alt="Team using ERP software"
             data-parallax
             className="h-72 w-full object-cover object-top"
@@ -1562,7 +1562,7 @@ export default function Home() {
         {/* Background photo */}
         <div className="pointer-events-none absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=60"
+            src="/images/office-building.png"
             alt=""
             aria-hidden="true"
             data-parallax

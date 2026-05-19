@@ -85,82 +85,85 @@ export const services: ServiceItem[] = [
   {
     slug: "ehps",
     type: "erp",
-    label: "EHPS",
-    title: "Elim HRIS & Payroll Software",
+    label: "HRMS & Payroll",
+    title: "Elim HRMS & Payroll Software",
     tagline:
-      "Streamline HR, payroll, and compliance for outsourcing companies.",
+      "Automate payroll, HR, and statutory compliance — all in one platform.",
     intro:
-      "Elim HRIS and Payroll Software is a customized solution for personnel information management, payroll, and statutory compliance. Designed for companies that outsource employees, it features modules for HR, payroll, leave, medical records, cooperative management, billing, and risk control. Highly configurable for multiple locations and salary structures.",
-    photo: "http://www.eiomsng.com/img/11.jpg",
+      "Elim HRMS & Payroll Software is a comprehensive solution for managing your workforce from hire to retire. Handle employee records, process monthly payroll with full statutory deductions (PAYE, Pension, NHF, NHIS), manage leave and loans, track medical benefits, and generate audit-ready reports — all from one integrated platform. Configurable for organisations of any size across multiple locations and salary structures.",
+    photo: "/images/ehps-hero.png",
     accentColor: "purple",
     modules: [
       {
-        title: "Human Resources",
-        desc: "Recruitment, employee records, leave, loans, and advances management.",
+        title: "Employee Records & Onboarding",
+        desc: "Maintain complete employee profiles from hire date, manage contracts, job history, qualifications, and emergency contacts in a centralised digital record.",
       },
       {
-        title: "Compensation Management",
-        desc: "Integrated payroll and HR data, monthly earnings, deductions, and statutory compliance.",
+        title: "Payroll & Compensation",
+        desc: "Process monthly payroll for unlimited employees, configure earnings and deduction elements, generate payslips, and post salary journals directly to the general ledger.",
       },
       {
-        title: "Medical & Cooperative Management",
-        desc: "Track staff medical records and manage cooperative society deductions.",
+        title: "Leave & Attendance Management",
+        desc: "Define leave types and entitlements, track balances in real time, automate approval workflows, and sync attendance data directly to payroll.",
       },
       {
-        title: "Client Billing",
-        desc: "Automated client invoicing, receivables, and agency fee management.",
+        title: "Loans & Advances",
+        desc: "Manage staff loan applications, set repayment schedules, and auto-deduct instalments each payroll cycle with full transaction history per employee.",
       },
       {
-        title: "Risk & Control",
-        desc: "Process monitoring, access restrictions, and compliance management.",
+        title: "Statutory Compliance & Reporting",
+        desc: "Automate PAYE, pension (PenCom), NHF, and NHIS calculations. Generate schedule files for remittance and produce FIRS-compliant reports for every pay period.",
       },
     ],
     benefits: [
       "Automated payroll and payslip generation",
-      "Multi-location and multi-client support",
-      "Customizable leave and loan policies",
-      "Integrated billing and receivables",
-      "Comprehensive compliance and reporting",
+      "Full statutory deduction compliance (PAYE, Pension, NHF, NHIS)",
+      "Configurable leave policies and approval workflows",
+      "Loan and advance management with auto-deduction",
+      "Multi-location and multi-department support",
+      "Direct general ledger integration",
     ],
   },
   {
     slug: "ehps-oce",
     type: "erp",
-    label: "EHPS-OCE",
-    title: "Elim HRIS & Payroll Software (OCE)",
-    tagline: "HRIS & Payroll for Employee Outsourcing Companies.",
+    label: "Hospitality HRMS",
+    title: "Elim Hospitality HRMS & Payroll",
+    tagline:
+      "Purpose-built HR and payroll for hotels, restaurants, and hospitality businesses.",
     intro:
-      "A flexible HRIS and Payroll solution for recruitment and outsourcing companies. Features include applicant portal, recruitment, employee management, leave, compliance, self-service, loans, payroll, billing, and risk management. Developed for organizations with complex outsourcing needs.",
-    photo: "http://www.eiomsng.com/img/11.jpg",
+      "Elim Hospitality HRMS & Payroll is a specialised workforce management solution designed for the unique demands of the hospitality industry. From managing shift rosters and seasonal staff to processing tips, service charges, and hospitality-specific payroll structures, it gives hotel groups, restaurants, and resorts the HR tools they need to run lean and stay compliant — across every property and outlet.",
+    photo: "/images/ehps-oce-hero.png",
     accentColor: "purple",
     modules: [
       {
-        title: "Applicant Portal & Recruitment",
-        desc: "Web-based job search, application, and recruitment management.",
+        title: "Shift & Roster Management",
+        desc: "Build and publish shift schedules across departments and outlets. Track clock-in/out, manage shift swaps, and sync attendance directly to payroll — eliminating manual timesheet reconciliation.",
       },
       {
-        title: "Employee Information & Leave",
-        desc: "Comprehensive employee records and flexible leave management.",
+        title: "Tips, Gratuity & Service Charge Processing",
+        desc: "Configure automatic distribution of tips and service charges per employee role or department. Calculate gratuity accurately and include it seamlessly in each pay run.",
       },
       {
-        title: "Statutory Compliance",
-        desc: "Automated tax, pension, NHF, NHIS, and payroll compliance.",
+        title: "Seasonal & Contract Staff Management",
+        desc: "Onboard and offboard seasonal workers quickly, manage fixed-term contracts, and maintain a talent pool for peak periods — all within the same system as your permanent headcount.",
       },
       {
-        title: "Self-Service & Loans",
-        desc: "Employee self-service for payslips, leave, loans, and advances.",
+        title: "Multi-Property HR & Payroll",
+        desc: "Manage staff across multiple hotel properties, restaurants, or outlets from one dashboard. Run consolidated payroll or process each property independently with full inter-property reporting.",
       },
       {
-        title: "Payroll & Billing",
-        desc: "Dynamic payroll, client billing, and receivables management.",
+        title: "Employee Self-Service Portal",
+        desc: "Let staff view payslips, apply for leave, check shift schedules, and request loans from any device — reducing HR admin load and improving employee satisfaction.",
       },
     ],
     benefits: [
-      "End-to-end outsourcing HR and payroll",
-      "Integrated applicant and employee management",
-      "Automated compliance and tax reporting",
-      "Self-service for employees",
-      "Client billing and receivables",
+      "Shift scheduling and real-time attendance tracking",
+      "Automated tips and service charge distribution",
+      "Seasonal and contract staff lifecycle management",
+      "Multi-property payroll from a single platform",
+      "Full statutory compliance (PAYE, Pension, NHF, NHIS)",
+      "Employee self-service on any device",
     ],
   },
   {
@@ -171,7 +174,7 @@ export const services: ServiceItem[] = [
     tagline: "Integrated Online & Offline Hybrid POS & Accounting System.",
     intro:
       "Elim POS Software is a customizable, integrated POS and accounting system for multi-branch retail businesses. Supports online/offline operation, centralized management, inventory, purchasing, sales, and financial accounting. Scalable for single or multiple locations.",
-    photo: "https://www.ace.vewatshippingltd.com/images/pos.jpg",
+    photo: "/images/pos-hero.png",
     accentColor: "purple",
     modules: [
       {
@@ -211,7 +214,7 @@ export const services: ServiceItem[] = [
     tagline: "Comprehensive hotel management and ERP solution.",
     intro:
       "Elim HMS is a complete hotel management system covering reservations, guest management, billing, housekeeping, inventory, and financials. Designed for hotels, groups, and chains seeking integrated operations and real-time reporting.",
-    photo: "https://www.ace.vewatshippingltd.com/images/hms.jpg",
+    photo: "/images/hms-hero.png",
     accentColor: "purple",
     modules: [
       {
@@ -252,7 +255,7 @@ export const services: ServiceItem[] = [
       "Comprehensive enterprise hospital management and accounting ERP software.",
     intro:
       "Elim Hospital ERP is a customizable hospital management and accounting solution for hospitals of all sizes. Integrates outpatient/inpatient management, pharmacy, billing, HR/payroll, inventory, and financials. Supports multi-branch, online/offline, and cloud deployment.",
-    photo: "https://www.ace.vewatshippingltd.com/images/hospitalerp.jpg",
+    photo: "/images/hospitalerp-hero.png",
     accentColor: "purple",
     modules: [
       {
@@ -294,7 +297,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Retail gives you an end-to-end accounting platform built for businesses that operate physical or online storefronts. Track point-of-sale income, manage stock levels across multiple locations, and reconcile every transaction to your books automatically. Whether you run a single boutique or a chain of outlets, ECPAS scales with you and ensures your numbers are always accurate and audit-ready.",
     photo:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80",
+      "/images/retail-service.png",
     accentColor: "pink",
     modules: [
       accountingModules[0],
@@ -322,7 +325,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Manufacturing connects your production floor to your accounting suite. Track raw material procurement, work-in-progress valuations, and finished goods inventory in one system. Cost every production run accurately, manage supplier payables, and produce financial reports that reflect the true profitability of each product line. Designed for Nigerian manufacturers who need cloud accounting that understands production economics.",
     photo:
-      "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1600&q=80",
+      "/images/manufacturing-service.png",
     accentColor: "pink",
     modules: [
       {
@@ -353,7 +356,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Professional Services is built for consultancies, law firms, accounting practices, and agencies. It ties client billing directly to timesheet records, manages retainer agreements, and gives you real-time profitability per client. Combined with integrated payroll, cash flow forecasting, and FIRS-compliant reporting, it is the only financial platform your professional firm will ever need.",
     photo:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+      "/images/professional-service.png",
     accentColor: "pink",
     modules: [
       timesheetModule,
@@ -381,7 +384,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Real Estate pulls every aspect of your property business into one accounting system. Manage development project costs, track rental income across your entire portfolio, bill tenants on schedule, and reconcile all transactions to your general ledger automatically. Whether you are a developer, property manager, or investor, ECPAS gives you the financial clarity to make confident decisions.",
     photo:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80",
+      "/images/realestate-service.png",
     accentColor: "pink",
     modules: [
       rentalModule,
@@ -409,7 +412,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Contract Services is designed for businesses that win, execute, and bill on contracts. Create project budgets, assign cost codes, track actual vs planned expenditure, and generate progress claims tied to contract milestones. Manage sub-contractor payments, track retentions, and ensure every contract is profitable and fully reconciled from award to final account.",
     photo:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+      "/images/contract-service.png",
     accentColor: "pink",
     modules: [
       projectModule,
@@ -440,7 +443,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Engineering Services gives engineering firms a complete financial platform — from project cost tracking and timesheet billing through to multi-currency procurement and FIRS-compliant reporting. Manage equipment costs, track project margins in real time, and ensure every billable hour and expense is captured accurately before it impacts your bottom line.",
     photo:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80",
+      "/images/engineering-service.png",
     accentColor: "pink",
     modules: [
       timesheetModule,
@@ -468,7 +471,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Trading & Distribution gives you complete visibility from supplier purchase order through to customer delivery. Manage multiple warehouses, track goods in transit, reconcile delivery notes to invoices, and monitor the profitability of every product SKU. Built for Nigerian distributors who need fast, accurate financial reporting across a high-volume transaction environment.",
     photo:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80",
+      "/images/distribution-service.png",
     accentColor: "pink",
     modules: [
       accountingModules[0],
@@ -496,7 +499,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPAS for Construction is purpose-built for civil and building contractors. Create detailed project budgets, track expenditure by cost code and work package, manage sub-contractor billing and retentions, and produce accurate valuations at every stage. Integrated payroll handles site labour, while robust financial reporting keeps directors and lenders informed throughout the project lifecycle.",
     photo:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
+      "/images/construction-service.png",
     accentColor: "pink",
     modules: [
       constructionModule,
@@ -529,7 +532,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for Real Estate is a full enterprise platform covering every stage of the property lifecycle — from land acquisition and development through sales, leasing, and property management. Integrate procurement, project management, CRM, HR, and financials in one system. Close deals faster, control development costs, and manage every unit in your portfolio from a single cloud dashboard.",
     photo:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80",
+      "/images/realestate-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -575,7 +578,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for General Business is an all-in-one ERP designed for small and mid-market Nigerian companies that have outgrown basic accounting software. It connects your financials, inventory, procurement, sales, HR, and payroll into a single cloud system — eliminating duplicate data entry, reducing errors, and giving management a real-time view of the entire business from any device.",
     photo:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+      "/images/professional-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -621,7 +624,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for Professional Services takes consultancies, law firms, IT companies, and agencies beyond traditional financial management. Connect your sales pipeline to project delivery, billing, and financial reporting in one unified platform. Track every billable hour, manage multi-project portfolios, and give partners and directors the real-time profitability data they need to run a high-performance practice.",
     photo:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "/images/erp-general-service.png",
     accentColor: "purple",
     modules: [
       timesheetModule,
@@ -661,7 +664,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for Contract Services is an integrated ERP built for businesses whose revenue comes from winning and executing contracts. Manage the full lifecycle from tender to final account — tracking project costs, sub-contractor relationships, site procurement, HR, and financials in one connected system. Reduce cost overruns, improve margin visibility, and produce contract-ready reports at any point during execution.",
     photo:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+      "/images/contract-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -701,7 +704,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for Engineering Services connects every function of an engineering business — from bid management and project execution through to equipment maintenance, HR, and financial reporting. Manage multi-disciplinary project teams, track equipment utilisation, control procurement, and give engineers, project managers, and directors access to the real-time data they need to deliver on time and on budget.",
     photo:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80",
+      "/images/engineering-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -741,7 +744,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for Trading & Distribution gives you an integrated ERP that spans the entire supply chain. Automate procurement replenishment, manage multi-warehouse stock, process high volumes of sales orders and deliveries, and integrate logistics costs into your financial reporting. Whether you distribute FMCG, pharmaceuticals, or industrial goods, ECPBES gives you the speed and accuracy your operation demands.",
     photo:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80",
+      "/images/distribution-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -781,7 +784,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for Construction is an end-to-end ERP that integrates every function of a construction or civil engineering company. Bid management, contract administration, project costing, procurement, sub-contractor management, site HR, plant and equipment tracking, and financial reporting — all in one cloud platform. Built for Nigerian contractors who need to manage multiple live projects and report accurately to clients and regulators.",
     photo:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
+      "/images/construction-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -821,7 +824,7 @@ export const services: ServiceItem[] = [
     intro:
       "ECPBES for Production Companies delivers a fully integrated ERP that connects your production floor to your boardroom. Manage bills of materials, production planning and scheduling, quality control, maintenance, warehouse, procurement, HR, and financials in a single cloud system. Achieve tighter cost control, reduce waste, improve on-time delivery, and generate the accurate financial reports your business needs to grow.",
     photo:
-      "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1600&q=80",
+      "/images/manufacturing-service.png",
     accentColor: "purple",
     modules: [
       {

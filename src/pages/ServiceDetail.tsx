@@ -355,7 +355,7 @@ export default function ServiceDetail() {
       <section className="relative overflow-hidden bg-[#1a3a5f] py-24">
         <div className="pointer-events-none absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=60"
+            src="/images/office-building.png"
             alt=""
             aria-hidden="true"
             className="h-full w-full object-cover"
