@@ -109,7 +109,7 @@ const healthcareItems: DropdownItem[] = [
 ];
 
 const productItems: DropdownItem[] = [
-  { label: "Hospitality", to: "/services/erp/ehps-oce" },
+  // { label: "Hospitality", to: "/services/erp/ehps-oce" },
   { label: "HRMS & Payroll", to: "/services/erp/ehps" },
   { label: "Point of Sales", to: "/services/erp/pos" },
 ];
@@ -338,6 +338,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
             ))}
+            {/* Features nav link removed — content distributed to service pages
             <li>
               <NavLink
                 to="/features"
@@ -354,6 +355,7 @@ export default function Navbar() {
                 Features
               </NavLink>
             </li>
+            */}
             <li>
               <NavLink
                 to="/partnership"

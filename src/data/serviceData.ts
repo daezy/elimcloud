@@ -80,6 +80,21 @@ const logisticsModule: ServiceModule = {
   desc: "Create delivery notes, track shipment status, and reconcile deliveries to sales orders. Monitor freight costs by route and link logistics expenses directly to the cost of sales.",
 };
 
+const fixedAssetsModule: ServiceModule = {
+  title: "Fixed Assets Management",
+  desc: "Track all your capital assets from acquisition through disposal. Calculate depreciation automatically, manage asset transfers, and maintain a complete audit trail.",
+};
+
+const maintenanceModule: ServiceModule = {
+  title: "Maintenance Management",
+  desc: "Schedule and track preventive and corrective maintenance for your assets and equipment. Reduce downtime and extend asset lifecycle with systematic maintenance planning.",
+};
+
+const riskModule: ServiceModule = {
+  title: "Risk & Control Management",
+  desc: "Implement internal controls, manage audit processes, and maintain compliance. Identify, assess, and mitigate risks with systematic monitoring and reporting tools.",
+};
+
 export const services: ServiceItem[] = [
   // ── Custom ERP Solutions (from user request) ──
   {
@@ -296,8 +311,7 @@ export const services: ServiceItem[] = [
     tagline: "Run every storefront from one cloud dashboard.",
     intro:
       "ECPAS for Retail gives you an end-to-end accounting platform built for businesses that operate physical or online storefronts. Track point-of-sale income, manage stock levels across multiple locations, and reconcile every transaction to your books automatically. Whether you run a single boutique or a chain of outlets, ECPAS scales with you and ensures your numbers are always accurate and audit-ready.",
-    photo:
-      "/images/retail-service.png",
+    photo: "/images/retail-service.png",
     accentColor: "pink",
     modules: [
       accountingModules[0],
@@ -306,6 +320,7 @@ export const services: ServiceItem[] = [
       accountingModules[3],
       accountingModules[4],
       multibranchModule,
+      fixedAssetsModule,
     ],
     benefits: [
       "Real-time stock levels across all store locations",
@@ -324,8 +339,7 @@ export const services: ServiceItem[] = [
     tagline: "From raw materials to finished goods — fully accounted for.",
     intro:
       "ECPAS for Manufacturing connects your production floor to your accounting suite. Track raw material procurement, work-in-progress valuations, and finished goods inventory in one system. Cost every production run accurately, manage supplier payables, and produce financial reports that reflect the true profitability of each product line. Designed for Nigerian manufacturers who need cloud accounting that understands production economics.",
-    photo:
-      "/images/manufacturing-service.png",
+    photo: "/images/manufacturing-service.png",
     accentColor: "pink",
     modules: [
       {
@@ -337,6 +351,7 @@ export const services: ServiceItem[] = [
       accountingModules[4],
       accountingModules[5],
       payrollModule,
+      fixedAssetsModule,
     ],
     benefits: [
       "Accurate cost-of-production per batch or run",
@@ -355,8 +370,7 @@ export const services: ServiceItem[] = [
     tagline: "Bill your time, manage your clients, grow your practice.",
     intro:
       "ECPAS for Professional Services is built for consultancies, law firms, accounting practices, and agencies. It ties client billing directly to timesheet records, manages retainer agreements, and gives you real-time profitability per client. Combined with integrated payroll, cash flow forecasting, and FIRS-compliant reporting, it is the only financial platform your professional firm will ever need.",
-    photo:
-      "/images/professional-service.png",
+    photo: "/images/professional-service.png",
     accentColor: "pink",
     modules: [
       timesheetModule,
@@ -383,8 +397,7 @@ export const services: ServiceItem[] = [
     tagline: "One platform for every property in your portfolio.",
     intro:
       "ECPAS for Real Estate pulls every aspect of your property business into one accounting system. Manage development project costs, track rental income across your entire portfolio, bill tenants on schedule, and reconcile all transactions to your general ledger automatically. Whether you are a developer, property manager, or investor, ECPAS gives you the financial clarity to make confident decisions.",
-    photo:
-      "/images/realestate-service.png",
+    photo: "/images/realestate-service.png",
     accentColor: "pink",
     modules: [
       rentalModule,
@@ -411,8 +424,7 @@ export const services: ServiceItem[] = [
     tagline: "Every contract costed, every milestone billed.",
     intro:
       "ECPAS for Contract Services is designed for businesses that win, execute, and bill on contracts. Create project budgets, assign cost codes, track actual vs planned expenditure, and generate progress claims tied to contract milestones. Manage sub-contractor payments, track retentions, and ensure every contract is profitable and fully reconciled from award to final account.",
-    photo:
-      "/images/contract-service.png",
+    photo: "/images/contract-service.png",
     accentColor: "pink",
     modules: [
       projectModule,
@@ -442,8 +454,7 @@ export const services: ServiceItem[] = [
     tagline: "Financial precision for complex engineering projects.",
     intro:
       "ECPAS for Engineering Services gives engineering firms a complete financial platform — from project cost tracking and timesheet billing through to multi-currency procurement and FIRS-compliant reporting. Manage equipment costs, track project margins in real time, and ensure every billable hour and expense is captured accurately before it impacts your bottom line.",
-    photo:
-      "/images/engineering-service.png",
+    photo: "/images/engineering-service.png",
     accentColor: "pink",
     modules: [
       timesheetModule,
@@ -470,8 +481,7 @@ export const services: ServiceItem[] = [
     tagline: "From purchase order to delivery — every naira tracked.",
     intro:
       "ECPAS for Trading & Distribution gives you complete visibility from supplier purchase order through to customer delivery. Manage multiple warehouses, track goods in transit, reconcile delivery notes to invoices, and monitor the profitability of every product SKU. Built for Nigerian distributors who need fast, accurate financial reporting across a high-volume transaction environment.",
-    photo:
-      "/images/distribution-service.png",
+    photo: "/images/distribution-service.png",
     accentColor: "pink",
     modules: [
       accountingModules[0],
@@ -498,8 +508,7 @@ export const services: ServiceItem[] = [
     tagline: "Track every cost, from groundbreaking to handover.",
     intro:
       "ECPAS for Construction is purpose-built for civil and building contractors. Create detailed project budgets, track expenditure by cost code and work package, manage sub-contractor billing and retentions, and produce accurate valuations at every stage. Integrated payroll handles site labour, while robust financial reporting keeps directors and lenders informed throughout the project lifecycle.",
-    photo:
-      "/images/construction-service.png",
+    photo: "/images/construction-service.png",
     accentColor: "pink",
     modules: [
       constructionModule,
@@ -531,8 +540,7 @@ export const services: ServiceItem[] = [
     tagline: "End-to-end ERP from land acquisition to property sale.",
     intro:
       "ECPBES for Real Estate is a full enterprise platform covering every stage of the property lifecycle — from land acquisition and development through sales, leasing, and property management. Integrate procurement, project management, CRM, HR, and financials in one system. Close deals faster, control development costs, and manage every unit in your portfolio from a single cloud dashboard.",
-    photo:
-      "/images/realestate-service.png",
+    photo: "/images/realestate-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -577,8 +585,7 @@ export const services: ServiceItem[] = [
     tagline: "One integrated system to run your entire business.",
     intro:
       "ECPBES for General Business is an all-in-one ERP designed for small and mid-market Nigerian companies that have outgrown basic accounting software. It connects your financials, inventory, procurement, sales, HR, and payroll into a single cloud system — eliminating duplicate data entry, reducing errors, and giving management a real-time view of the entire business from any device.",
-    photo:
-      "/images/professional-service.png",
+    photo: "/images/professional-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -605,6 +612,9 @@ export const services: ServiceItem[] = [
         title: "Management Reporting",
         desc: "Build custom dashboards, schedule automated KPI reports, and give different management levels access to the insights they need in real time.",
       },
+      fixedAssetsModule,
+      maintenanceModule,
+      riskModule,
     ],
     benefits: [
       "Single source of truth across all departments",
@@ -623,8 +633,7 @@ export const services: ServiceItem[] = [
     tagline: "Beyond accounting — a complete business management platform.",
     intro:
       "ECPBES for Professional Services takes consultancies, law firms, IT companies, and agencies beyond traditional financial management. Connect your sales pipeline to project delivery, billing, and financial reporting in one unified platform. Track every billable hour, manage multi-project portfolios, and give partners and directors the real-time profitability data they need to run a high-performance practice.",
-    photo:
-      "/images/erp-general-service.png",
+    photo: "/images/erp-general-service.png",
     accentColor: "purple",
     modules: [
       timesheetModule,
@@ -645,6 +654,7 @@ export const services: ServiceItem[] = [
         desc: "Generate time-based, milestone, and retainer invoices. Manage revenue recognition in line with IFRS 15 and track deferred revenue automatically.",
       },
       payrollModule,
+      riskModule,
     ],
     benefits: [
       "Full visibility from pitch to final invoice",
@@ -663,8 +673,7 @@ export const services: ServiceItem[] = [
     tagline: "Manage contracts, resources, and finances in one platform.",
     intro:
       "ECPBES for Contract Services is an integrated ERP built for businesses whose revenue comes from winning and executing contracts. Manage the full lifecycle from tender to final account — tracking project costs, sub-contractor relationships, site procurement, HR, and financials in one connected system. Reduce cost overruns, improve margin visibility, and produce contract-ready reports at any point during execution.",
-    photo:
-      "/images/contract-service.png",
+    photo: "/images/contract-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -703,8 +712,7 @@ export const services: ServiceItem[] = [
     tagline: "Integrated ERP for complex engineering organisations.",
     intro:
       "ECPBES for Engineering Services connects every function of an engineering business — from bid management and project execution through to equipment maintenance, HR, and financial reporting. Manage multi-disciplinary project teams, track equipment utilisation, control procurement, and give engineers, project managers, and directors access to the real-time data they need to deliver on time and on budget.",
-    photo:
-      "/images/engineering-service.png",
+    photo: "/images/engineering-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -725,6 +733,7 @@ export const services: ServiceItem[] = [
         desc: "Manage engineers, technicians, and support staff. Track certifications and competency requirements, manage leave, and process multi-grade payrolls with statutory deductions.",
       },
       accountingModules[4],
+      fixedAssetsModule,
     ],
     benefits: [
       "Project progress vs baseline tracking",
@@ -743,8 +752,7 @@ export const services: ServiceItem[] = [
     tagline: "Full supply chain control — from supplier to customer.",
     intro:
       "ECPBES for Trading & Distribution gives you an integrated ERP that spans the entire supply chain. Automate procurement replenishment, manage multi-warehouse stock, process high volumes of sales orders and deliveries, and integrate logistics costs into your financial reporting. Whether you distribute FMCG, pharmaceuticals, or industrial goods, ECPBES gives you the speed and accuracy your operation demands.",
-    photo:
-      "/images/distribution-service.png",
+    photo: "/images/distribution-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -783,8 +791,7 @@ export const services: ServiceItem[] = [
     tagline: "Full project lifecycle management for construction companies.",
     intro:
       "ECPBES for Construction is an end-to-end ERP that integrates every function of a construction or civil engineering company. Bid management, contract administration, project costing, procurement, sub-contractor management, site HR, plant and equipment tracking, and financial reporting — all in one cloud platform. Built for Nigerian contractors who need to manage multiple live projects and report accurately to clients and regulators.",
-    photo:
-      "/images/construction-service.png",
+    photo: "/images/construction-service.png",
     accentColor: "purple",
     modules: [
       {
@@ -805,6 +812,7 @@ export const services: ServiceItem[] = [
         desc: "Record daily site attendance, manage different labour grades and gangs, process weekly or monthly payroll, and post all labour costs to the right project cost codes.",
       },
       accountingModules[4],
+      fixedAssetsModule,
     ],
     benefits: [
       "Tender-to-project budget conversion",
@@ -823,8 +831,7 @@ export const services: ServiceItem[] = [
     tagline: "Integrated ERP from raw material to finished product.",
     intro:
       "ECPBES for Production Companies delivers a fully integrated ERP that connects your production floor to your boardroom. Manage bills of materials, production planning and scheduling, quality control, maintenance, warehouse, procurement, HR, and financials in a single cloud system. Achieve tighter cost control, reduce waste, improve on-time delivery, and generate the accurate financial reports your business needs to grow.",
-    photo:
-      "/images/manufacturing-service.png",
+    photo: "/images/manufacturing-service.png",
     accentColor: "purple",
     modules: [
       {
