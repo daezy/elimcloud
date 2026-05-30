@@ -71,8 +71,24 @@ const erpItems: DropdownItem[] = [
   },
 ];
 
+const hotelItems: DropdownItem[] = [
+  {
+    label: "Eliim Hotel ERP Software (Online & Offline)",
+    to: "/services/erp/hms",
+  },
+  { label: "Elim Cloud Hotel Management Software", to: "/services/erp/hms" },
+  {
+    label: "Elim Premium Hotel Software Hybrid (Desktop)",
+    to: "/services/erp/hms",
+  },
+  { label: "Elim Group Hotel Management Software", to: "/services/erp/hms" },
+  { label: "Elim Hotel POS and Accounting Software", to: "/services/erp/hms" },
+  { label: "Elim Eatery & Fast Food POS Software", to: "/services/erp/hms" },
+  { label: "Epordo Hotel Keylock System", to: "/services/erp/hms" },
+  { label: "Hotel Cloud Attendance System", to: "/services/erp/hms" },
+];
+
 const productItems: DropdownItem[] = [
-  { label: "Hotel Software", to: "/services/erp/hms" },
   { label: "Hospitality", to: "/services/erp/ehps-oce" },
   { label: "HRMS & Payroll", to: "/services/erp/ehps" },
   { label: "Healthcare", to: "/services/erp/hospitalerp" },
@@ -275,6 +291,11 @@ export default function Navbar() {
               scrolled={scrolled}
             />
             <NavDropdown label="ERP" items={erpItems} scrolled={scrolled} />
+            <NavDropdown
+              label="Hotel Software"
+              items={hotelItems}
+              scrolled={scrolled}
+            />
             {productItems.map((item) => (
               <li key={item.to}>
                 <NavLink
