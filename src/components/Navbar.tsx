@@ -88,10 +88,29 @@ const hotelItems: DropdownItem[] = [
   { label: "Hotel Cloud Attendance System", to: "/services/erp/hms" },
 ];
 
+const healthcareItems: DropdownItem[] = [
+  { label: "Elim Hospital ERP Software", to: "/services/erp/hospitalerp" },
+  {
+    label: "Elim Hospital ERP Accounting System",
+    to: "/services/erp/hospitalerp",
+  },
+  {
+    label: "Elim Eye Clinic Management Software",
+    to: "/services/erp/hospitalerp",
+  },
+  {
+    label: "Elim Laboratory and Diagnostic Software",
+    to: "/services/erp/hospitalerp",
+  },
+  {
+    label: "Elim Health Clinic Management Software",
+    to: "/services/erp/hospitalerp",
+  },
+];
+
 const productItems: DropdownItem[] = [
   { label: "Hospitality", to: "/services/erp/ehps-oce" },
   { label: "HRMS & Payroll", to: "/services/erp/ehps" },
-  { label: "Healthcare", to: "/services/erp/hospitalerp" },
   { label: "Point of Sales", to: "/services/erp/pos" },
 ];
 
@@ -294,6 +313,11 @@ export default function Navbar() {
             <NavDropdown
               label="Hotel Software"
               items={hotelItems}
+              scrolled={scrolled}
+            />
+            <NavDropdown
+              label="Healthcare"
+              items={healthcareItems}
               scrolled={scrolled}
             />
             {productItems.map((item) => (
