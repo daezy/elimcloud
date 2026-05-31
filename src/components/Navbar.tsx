@@ -108,9 +108,29 @@ const healthcareItems: DropdownItem[] = [
   },
 ];
 
+const hrmsItems: DropdownItem[] = [
+  {
+    label: "Elim Payroll & HR Software — Public Sector",
+    to: "/services/erp/ehps",
+  },
+  {
+    label: "Elim HR Payroll Software — Productive Sector",
+    to: "/services/erp/ehps",
+  },
+  {
+    label: "Elim HR & Payroll System — Employee Outsourcing",
+    to: "/services/erp/ehps",
+  },
+  { label: "Elim Cloud Payroll Software", to: "/services/erp/ehps" },
+  { label: "Elim Cloud HRMS & Payroll Software", to: "/services/erp/ehps" },
+  {
+    label: "Elim Premium Cloud HRMS and Payroll Software",
+    to: "/services/erp/ehps",
+  },
+];
+
 const productItems: DropdownItem[] = [
   // { label: "Hospitality", to: "/services/erp/ehps-oce" },
-  { label: "HRMS & Payroll", to: "/services/erp/ehps" },
   { label: "Point of Sales", to: "/services/erp/pos" },
 ];
 
@@ -318,6 +338,11 @@ export default function Navbar() {
             <NavDropdown
               label="Healthcare"
               items={healthcareItems}
+              scrolled={scrolled}
+            />
+            <NavDropdown
+              label="HRMS & Payroll"
+              items={hrmsItems}
               scrolled={scrolled}
             />
             {productItems.map((item) => (
