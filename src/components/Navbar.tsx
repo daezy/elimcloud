@@ -129,9 +129,17 @@ const hrmsItems: DropdownItem[] = [
   },
 ];
 
+const posItems: DropdownItem[] = [
+  { label: "Point of Sales Software — Eatery", to: "/services/erp/pos" },
+  { label: "Point of Sales Software — Retail Store", to: "/services/erp/pos" },
+  { label: "Point of Sales Software — Small Business", to: "/services/erp/pos" },
+  { label: "Point of Sales Software — Pharmacy Stores", to: "/services/erp/pos" },
+  { label: "Point of Sales Software — Electronic Store", to: "/services/erp/pos" },
+];
+
 const productItems: DropdownItem[] = [
   // { label: "Hospitality", to: "/services/erp/ehps-oce" },
-  { label: "Point of Sales", to: "/services/erp/pos" },
+  // { label: "Point of Sales", to: "/services/erp/pos" },
 ];
 
 function NavDropdown({
@@ -343,6 +351,11 @@ export default function Navbar() {
             <NavDropdown
               label="HRMS & Payroll"
               items={hrmsItems}
+              scrolled={scrolled}
+            />
+            <NavDropdown
+              label="Point of Sales"
+              items={posItems}
               scrolled={scrolled}
             />
             {productItems.map((item) => (
