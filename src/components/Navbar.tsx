@@ -73,16 +73,16 @@ const erpItems: DropdownItem[] = [
 
 const hotelItems: DropdownItem[] = [
   {
-    label: "Eliim Hotel ERP Software (Online & Offline)",
+    label: "Eliim Hotel ERP Software (Online & Offline Hybrid)",
     to: "/services/erp/hms",
   },
   { label: "Elim Cloud Hotel Management Software", to: "/services/erp/hms" },
   {
-    label: "Elim Premium Hotel Software Hybrid (Desktop)",
+    label: "Elim Premium Hotel Software (Desktop)",
     to: "/services/erp/hms",
   },
   { label: "Elim Group Hotel Management Software", to: "/services/erp/hms" },
-  { label: "Elim Hotel POS and Accounting Software", to: "/services/erp/hms" },
+  { label: "Elim Hotel POS Software", to: "/services/erp/hms" },
   { label: "Elim Eatery & Fast Food POS Software", to: "/services/erp/hms" },
   { label: "Epordo Hotel Keylock System", to: "/services/erp/hms" },
   { label: "Hotel Cloud Attendance System", to: "/services/erp/hms" },
@@ -132,9 +132,18 @@ const hrmsItems: DropdownItem[] = [
 const posItems: DropdownItem[] = [
   { label: "Point of Sales Software — Eatery", to: "/services/erp/pos" },
   { label: "Point of Sales Software — Retail Store", to: "/services/erp/pos" },
-  { label: "Point of Sales Software — Small Business", to: "/services/erp/pos" },
-  { label: "Point of Sales Software — Pharmacy Stores", to: "/services/erp/pos" },
-  { label: "Point of Sales Software — Electronic Store", to: "/services/erp/pos" },
+  {
+    label: "Point of Sales Software — Small Business",
+    to: "/services/erp/pos",
+  },
+  {
+    label: "Point of Sales Software — Pharmacy Stores",
+    to: "/services/erp/pos",
+  },
+  {
+    label: "Point of Sales Software — Electronic Store",
+    to: "/services/erp/pos",
+  },
 ];
 
 const productItems: DropdownItem[] = [
